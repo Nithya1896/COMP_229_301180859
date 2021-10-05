@@ -1,0 +1,18 @@
+/*File name: styles.csss
+Student Name: Nithya Sheena Sham Sundar
+Student Id: 301180859
+Date : 02/10/2021*/
+/* setting font family and color for texts */
+p,h1,h2,h3,h4,h5,h6,a,i,b,li,span{
+  font-family: Roboto;
+  color: black;
+}
+/* to center a element */
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+

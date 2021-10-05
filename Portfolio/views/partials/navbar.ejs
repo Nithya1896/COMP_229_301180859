@@ -1,0 +1,57 @@
+<!-- File name: navbar.ejs
+Student Name: Nithya Sheena Sham Sundar
+Student Id: 301180859
+Date : 30/09/2021 -->
+<!-- main navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light " 
+style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: small;">
+        <img src="assets/images/logo.PNG" alt="" width="50" height="50">
+        Nithya Sheena Sham Sundar</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Home Tab -->
+          <% if (title == "Home"){ %> 
+            <li class="nav-item active"> <% }
+          else { %> <li class="nav-item"> <% } %>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <!-- About Tab -->
+          <% if (title == "About"){ %> 
+            <li class="nav-item active"> <% }
+          else { %> <li class="nav-item"> <% } %>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">
+              <i class="fas fa-info-circle"></i> About</a>
+          </li>
+          <!-- Projects Tab -->
+          <% if (title == "Projects"){ %> 
+            <li class="nav-item active"> <% }
+          else { %> <li class="nav-item"> <% } %>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">
+              <i class="fas fa-folder-open"></i> Projects</a>
+          </li>
+          <!-- Services Tab -->
+          <% if (title == "Home"){ %> 
+            <li class="nav-item active"> <% }
+          else { %> <li class="nav-item"> <% } %>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">
+              <i class="fas fa-user-cog"></i> Services</a>
+          </li>
+          <!-- Contacts Tab -->
+          <% if (title == "Contacts"){ %> 
+            <li class="nav-item active"> <% }
+          else { %> <li class="nav-item"> <% } %>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacts">
+              <i class="fas fa-id-card"></i> Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

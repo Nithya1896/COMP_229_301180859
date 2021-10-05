@@ -1,0 +1,46 @@
+<!-- File name: contacts.ejs
+Student Name: Nithya Sheena Sham Sundar
+Student Id: 301180859
+Date : 02/10/2021 -->
+<!-- including the header,index and navigation bar files -->
+<%- include partials/header.ejs %>
+<%- include index.ejs %>
+<%- include partials/navbar.ejs %>
+<!-- Contacts Page-->
+<div class="row" style="background-color: #e3f2fd; 
+height: 500px; border-bottom-right-radius: 80%;">
+    <div class="col-md-12 mt-5" >
+        <h3 class="px-5">CONTACT ME</h3>
+        <p class="px-5"><i class="fas fa-envelope"></i> nshamsun@my.centennialcollege.ca</p>
+        <div class="col-md-5 px-5 center" 
+            style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            height: auto;background-color: white;border-radius: 20px;">
+            <!-- Creating a Form (Not fully functional)-->
+            <h6 class="center">ENTER YOUR DETAILS </h6>
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="emailId">Email Id:</label>
+                    <input type="email" class="form-control" id="emailId">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" rows="2" id="message"></textarea>
+                  </div>
+            </form>
+            <!-- For Now redirecting back to home page while clicking the "Send Message" Button -->
+            <button type="button" onclick="location.href = '/';" class="btn btn-info mt-2 mb-3"
+            style="color: white;">Send Message
+            </button>
+        </div><br><br>
+    </div>
+</div>
+<!-- footer -->
+<%- include partials/footer.ejs %>

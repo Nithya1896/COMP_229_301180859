@@ -1,0 +1,37 @@
+<!-- File name: home.ejs
+Student Name: Nithya Sheena Sham Sundar
+Student Id: 301180859
+Date : 03/10/2021 -->
+<!-- including the header,index and navigation bar files -->
+<%- include partials/header.ejs %>
+<%- include index.ejs %>
+<%- include partials/navbar.ejs %>
+<!-- Home page -->
+<div class="container-fluid">
+    <div class="row"  style="background-color: #e3f2fd; 
+    height: 510px; border-bottom-right-radius: 50%;">
+        <div class="col-md-6 mt-5 px-5">
+            <div class="row">
+                <h3>HOME</h3>
+                <h4 class="center">Welcome to my Portfolio!!!</h4>
+                <br><br>
+                <b>Mission:</b>
+                <p>"Put the best of my knowledge to bring forth the finest possible solutions
+                 to clients with maximum efficiency."</p> 
+                <p>Click here to know more about me and check the cool projects that I have worked.</p>
+            </div>
+            <br>
+            <!-- This button redirects to about page  -->
+            <div class="row center">
+                <button type="button" onclick="location.href = 'about';" class="btn btn-info"
+                style="color: white;">Know More
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6" style="background-image: url(assets/images/workspace.jpg);background-repeat: no-repeat;
+        background-size: cover;border-top-left-radius:15% ;">       
+        </div>
+    </div>   
+</div>
+<!-- footer -->
+<%- include partials/footer.ejs %>

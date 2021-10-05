@@ -1,0 +1,54 @@
+<!-- File name: projects.ejs
+Student Name: Nithya Sheena Sham Sundar
+Student Id: 301180859
+Date : 04/10/2021 -->
+<!-- including the header,index and navigation bar files -->
+<%- include partials/header.ejs %>
+<%- include partials/navbar.ejs %>
+<%- include index.ejs %>
+<!-- Projects Page -->
+<div class="container-fluid">
+    <div class="row" style="background-color: #e3f2fd;height: auto; border-bottom-right-radius: 80%;">
+        <div class="col-md-12 mt-4 px-5">
+            <h3>MY PROJECTS</h3>
+            <h6>Here are some of my RPA Projects,</h6>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <b>1.Software bot that reads mail inbox and writes to Excel:</b><br><br>
+                    <h6>Code snippet:</h6>
+                    <img src="assets/images/emailReadCodeSnippet.PNG" alt="code-snippet" style="height: 300px;
+                    width: 600px;border-radius: 2%;"><br><br>
+                    <div class="row">
+                        <b>Role Played: Developer</b><br>
+                        <b>Responsibilities:</b>
+                        <li >Fetched e-mail body from inbox with specified subject using the e-mail dictionary 
+                            properties available in Automation Anywhere. </li>
+                        <li >Created a new Excel sheet updated it with the fetched data from e-mail..</li>
+                        <li >Extracted texts from the email body using string operations like substring, split strings,
+                            and extract text where required.</li>
+                        <li >Segregated the data into different sheets in Excel based on specific criteria.</li>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <b>2.Software bot that organizes data in Excel and sends emails to the email ids:</b><br><br>
+                    <h6>Code snippet:</h6>
+                    <img src="assets/images/sendEmailCodeSnippet.PNG" alt="code-snippet" style="height: 300px;
+                    width: 600px;border-radius: 2%;"><br><br>
+                    <div class="row">
+                        <b>Role Played: Developer</b><br>
+                        <b>Responsibilities:</b>
+                        <li>Fetched input data from various sources like reading data from Excel files,
+                            Outlook into Automation Anywhere.</li>
+                        <li>Encrypting PDF files and securing it with password and adding as attachment to the e-mail.</li>
+                        <li>Provided Exceptional handling at every possible scenario for a robust error-free development.</li>    
+                        <li>Ensured reusable components are designed & developed where applicable.</li>
+                        <br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+<!-- footer -->
+<%- include partials/footer.ejs %>
